@@ -2,6 +2,8 @@
 
 **An analytics engine for serious games, published as Open Documentation.**
 
+[![DOI](https://zenodo.org/badge/1221296838.svg)](https://doi.org/10.5281/zenodo.19782551)
+
 PeTRA is a research-grade analytics engine designed to read player behavior in serious games — not just outcomes (scores, completion), but the *information trails* players leave through the game environment over repeated play. Developed alongside *Nexus* (a serious game on social media risk awareness) as a paired example, PeTRA is intended to grow into a common analytics core that other serious-game researchers can adapt to their own games.
 
 This repository hosts PeTRA's **Open Documentation**: the methodology, design rationale, and architecture. It does NOT host the implementation code.
