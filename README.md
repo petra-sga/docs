@@ -15,7 +15,7 @@ This repository hosts PeTRA's **Open Documentation**: the methodology, design ra
 PeTRA's **Open Documentation** model means:
 
 - **Methodology, design rationale, and architecture** are openly published here for inspection, replication, and scholarly reference.
-- **Implementation code** is not openly licensed for unrestricted redistribution. Researchers wanting to use PeTRA can either (a) build their own implementation from the documentation, or (b) request access to a Docker image as a vetted collaborator.
+- **Implementation code** is not openly licensed for unrestricted redistribution.
 
 Academic methodology papers are, in effect, *blueprints* — they describe HOW to build something so that other researchers can implement it in their own context. Open Documentation extends this academic practice into a publication strategy: the blueprint is openly published; the implementation is one worked example.
 
@@ -30,11 +30,11 @@ The choice reflects two realities:
 
 ## For researchers wanting to use PeTRA
 
-Two paths:
+PeTRA offers three paths, each suited to different research needs:
 
-**Path 1 — Build your own implementation from the documentation.**
+### Path 1 — Build your own implementation from the documentation
 
-The PeTRA methodology is specifiable enough that you can implement an analytics engine for your own serious game in any tech stack. The documentation here is the blueprint; your implementation is the realization. Cite PeTRA as the methodological source.
+The PeTRA methodology is specifiable enough that you can implement an analytics engine for your own serious game in any tech stack. The documentation here is the blueprint; your implementation is the realization.
 
 The architecture is three-layer:
 
@@ -42,14 +42,31 @@ The architecture is three-layer:
 2. **Analytics modules** — process information trails and other behavioral indicators
 3. **Reporting/visualization layer** — renders results for researchers
 
-**Path 2 — Request access to the Docker image as a vetted collaborator.**
+**Best for**: research teams with engineering capacity who want full independence over their analytics infrastructure.
+**Cost**: free.
+**Obligations**: standard academic citation when publishing.
 
-A Dockerized version of PeTRA is available to vetted academic researchers on request. Email the author with:
+### Path 2 — Hosted analytics with co-publication (active collaborators)
 
-- Your name, institutional affiliation, and role
-- A brief description of your research project and intended use
-- Your IRB approval status, if applicable
-- Acknowledgement that the Docker image will not be redistributed
+Use Loh's hosted PeTRA instance to analyze your data. Your game and database live on your own infrastructure (e.g., Vercel + Render); a custom adapter — which we'll create together — lets PeTRA read your database for analysis. PeTRA computes metrics in real-time; PeTRA is stateless and stores no data, so your data never leaves your infrastructure for storage purposes.
+
+Because Path 2 is a genuine research collaboration — Loh contributes the engine and analytical expertise; you contribute the game, the data, and the research questions — **co-publication is part of the terms**. We discuss authorship, contribution roles, and publication targets at the start of the collaboration.
+
+**Best for**: research collaborators who want to use PeTRA without engineering their own implementation, and who are open to genuine collaborative research.
+**Cost**: free.
+**Obligations**: co-publication agreement.
+
+To inquire: email the author with your name, institutional affiliation, a brief description of your serious game and research project, your IRB approval status, and your willingness to co-publish.
+
+### Path 3 — Snapshot license for self-hosting
+
+For researchers who need to run PeTRA on their own infrastructure (typically due to IRB requirements, data residency rules, or institutional policies), a snapshot license is available. You receive a frozen version of PeTRA at the time of license; you run it on your infrastructure; you handle security and maintenance. PeTRA's continued development happens privately — newer versions are not provided as part of the snapshot license.
+
+**Best for**: researchers with self-hosting requirements that prevent using Path 2.
+**Cost**: token fee (covers administrative costs).
+**Obligations**: non-redistribution agreement; you are responsible for the security and maintenance of your installation.
+
+To inquire: email the author with your name, institutional affiliation, the reason a self-hosted version is required, and your IRB approval status.
 
 ---
 
@@ -90,7 +107,7 @@ School of Education
 Southern Illinois University Carbondale
 csloh@siu.edu
 
-For PeTRA-related inquiries — Docker access requests, collaboration proposals, methodology questions, citation queries — please email above.
+For PeTRA-related inquiries — Path 2 collaboration proposals, Path 3 license inquiries, methodology questions, citation queries — please email above.
 
 ---
 
